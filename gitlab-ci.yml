@@ -1,0 +1,7 @@
+stages:
+  -test
+
+say-hello:
+  stage: test
+  script:
+    -echo "Hello world"
