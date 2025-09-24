@@ -1,8 +1,10 @@
 stages:
-  - test
+  - greet
 
-test-job:
-  stage: test
+say-hello:
+  stage: greet
   script:
-    - echo "Hello Gauthier, GitLab CI is working!"
+    - echo "Hello Gauthier, This job runs only on the dev branch!"
+  only:
+   -dev
 
