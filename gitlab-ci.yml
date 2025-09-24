@@ -4,4 +4,4 @@ stages:
 say-hello:
   stage: test
   script:
-    -echo "Hello world"
+    -echo "Hello world got"
